@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int rem=n%10;
+		if(rem==7||n%7==0)
+		System.out.println("buzzer");
+		else
+		System.out.println("not buzzer");
+	}
+}
