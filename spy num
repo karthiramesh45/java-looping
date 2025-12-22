@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n= sc.nextInt();
+		int sum=0;
+		while(n!=0){
+		    int rem=n%10;
+		    sum=sum+rem;
+		    n=n/10;
+		}
+		int s=sum;
+		int pro=1;
+		while(s!=0){
+		    int rem2=s%10;
+		    pro=pro*rem2;
+		    s=s/10;
+		}
+		if(sum==pro){
+		    System.out.println("spy");
+		}
+		else{
+		    System.out.println("not");
+		}
+	}
+}
